@@ -1,0 +1,262 @@
+.caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.alt_way {
+    text-align: end;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8%
+}
+
+.reg {
+    border-radius: 40px;
+    border: 1px solid #007BFF;
+    color: #007BFF;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 60px
+}
+
+.reg:hover {
+    background-color: #007BFF;
+    color: white;
+    transition: 0.8s;
+}
+
+.main_caption {
+    text-align: end;
+    font-size: 48px;
+    font-weight: bold
+}
+
+.row {
+    padding: 0
+}
+
+/*
+.container-fluid {
+    height: 100vh
+}*/
+.reg_page {
+    padding: 0% 0% 5% 0%
+}
+
+.log,
+.pass,
+.re-pass {
+    border-radius: 4.5px;
+    margin-bottom: 25px;
+    max-height: 49px;
+    /*    max-width: 388px;*/
+    min-height: 49px;
+    /*        min-width: 388px;*/
+    width: 100%;
+}
+
+/* Мобилка */
+
+
+@media screen and (max-width: 340px) {
+
+    .log,
+    .pass,
+    .re-pass {
+        max-width: 388px;
+        min-width: 10px;
+    }
+
+    .main_caption {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold
+    }
+
+    .general_fields {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 300px;
+    }
+
+    .reg_logo {
+        margin: 0px !important;
+    }
+
+    .reg_page {
+        margin: 0px;
+    }
+
+    .reg {
+        padding: 0 ! important;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .main_caption {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold
+    }
+
+    .alt_way {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400
+    }
+
+    .general_fields {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        width: 300px;
+    }
+
+    .reg_logo {
+        margin: 0px !important;
+    }
+
+    .reg_page {
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main_caption {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .alt_way {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400
+    }
+
+    .general_fields {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .reg_page {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main_caption {
+        text-align: center;
+        font-weight: bold
+    }
+
+    .alt_way {
+        text-align: center;
+        font-weight: 400
+    }
+
+    .reg_logo {
+        margin-right: 0px !important;
+    }
+
+    .reg_page {
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .main_caption {
+        text-align: center;
+        font-weight: bold;
+        font-size: 38px;
+    }
+
+    .alt_way {
+        text-align: center;
+        font-weight: 400
+    }
+
+    .general_fields {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 0 10%;
+        width: 300px;
+    }
+
+    .reg_logo {
+        margin: 0px !important;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .main_caption {
+        text-align: center;
+        font-weight: bold
+    }
+
+    .alt_way {
+        text-align: center;
+        font-weight: 400
+    }
+
+    .general_fields {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 300px;
+    }
+
+    .reg_logo {
+        margin: 0px !important;
+    }
+
+    .reg_page {
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .main_caption {
+        text-align: end;
+        font-weight: bold;
+        font-size: 48px;
+    }
+
+    .alt_way {
+        text-align: end;
+        font-weight: 400
+    }
+
+    .general_fields {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 388px;
+    }
+
+    .reg_logo {
+        margin: 0px !important;
+    }
+
+    .reg_page {
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 991px) {}
+
+@media screen and (min-width: 1300px) {}
+
+/* Мобилка - конец*/
+
+.container-fluid {
+    padding: 0;
+}
+
+.col-lg-3 {
+    padding: 0;
+}
+
+.col-lg-7 {
+    padding-right: 0;
+}

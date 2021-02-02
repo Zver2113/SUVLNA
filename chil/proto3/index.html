@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" class="overflow-x-hidden">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/General.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <link rel="shortcut icon" href="icons/header-main-blue.svg">
+    <title>Главная</title>
+</head>
+
+<body class="w-100">
+    <div id="app">
+
+        <!-- Шапка -->
+
+        <nav class="shadow navbar navbar-expand-lg navbar-light bg-light w-100">
+            <div class="container-fluid">
+                <a href="index.html" class="btn mr-auto pl-0 ml-0 ml-md-3 ml-lg-4 ml-xl-5 d-flex mt-2">
+                    <img src="icons/logo-black.svg" class="mb-2" />
+                    <div class="w-100 mt-1 logo">
+                        <span class="font-weight-bold mr-1">Specialists</span><br />
+                        <span class="ml-2 font-weight-bold">Upper Volga</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="btn my-2 pt-2 header-blue header-mob">
+                                <img src="icons/header-main-blue.svg" class="header-icon" />
+                                <span class="header-font ml-4 ml-lg-0">Главная</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="app.html" class="btn my-2 pt-2 header-hover header-mob pt-2">
+                                <img src="icons/header-app.svg" class="header-icon" />
+                                <span class="header-font ml-4 ml-lg-0">Заявка</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="search.html" class="btn my-2 header-hover header-mob">
+                                <img src="icons/header-search.svg" class="header-icon" />
+                                <span class="header-font ml-4 ml-lg-0">Поиск</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="education.html" class="btn my-2 header-hover header-mob pt-2">
+                                <img src="icons/header-education.svg" class="header-icon" />
+                                <span class="header-font ml-2 ml-lg-0">Обучение</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0 ml-auto mr-0 mr-lg-5">
+                        <li class="nav-item mt-0 ml-auto mr-0">
+                            <a href="registration.html" class="ml-auto mr-0" style="cursor: pointer; text-decoration: none;">
+                                <span class="font-weight-bold">Регистрация</span>
+                                <img src="icons/header-user.svg" class="ml-1" style="width: 40px;" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Шапка - конец -->
+
+        <!-- Блок 1 -->
+
+        <div class="block_slider " style="margin: 7% 6% 10% 6%">
+            <div id="carouselExampleIndicators" style="background-color: white" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators  d-flex justify-content-end">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active mx-4 " style="height: 20px; width: 20px; border: 1px solid #2D2D2D;border-radius: 50%; background-color: #2D2D2D">
+                    </li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="mx-4" style="height: 20px; width: 20px; border: 1px solid #2D2D2D;border-radius: 50%; background-color: #2D2D2D">
+                    </li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="mx-4" style="height: 20px; width: 20px; border: 1px solid #2D2D2D;border-radius: 50%; background-color: #2D2D2D">
+                    </li>
+                </ol>
+                <div class="carousel-inner" style="padding-bottom: 150px">
+                    <div class="carousel-item active" style="border: 0px solid white!important;">
+                        <div class="slide_1 row">
+                            <div class="pic col-xm-6" style="padding-right: 20px!important">
+                                <img src="images/main-slide1.svg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-xm-6 my-auto">
+                                <p class="slide_text_1">
+                                    Пора задуматься
+                                </p>
+                                <p class="slide_text_2">
+                                    А надо ли тебе это всё?
+                                </p>
+                                <p class="w-75 slide_text_3">
+                                    <a href="#">Пройди наше обучение, и ты обязательно ответишь на свой вопрос -></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="border: 0px solid white!important;">
+                        <div class="slide_2 row">
+                            <div class="pic col-xm-6" style="padding-right: 20px!important">
+                                <img src="images/main-slide1.svg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-xm-6 my-auto">
+                                <p class="slide_text_1">
+                                    Пора задуматься
+                                </p>
+                                <p class="slide_text_2">
+                                    А надо ли тебе это всё?
+                                </p>
+                                <p class="w-75 slide_text_3">
+                                    <a href=" #">Пройди наше обучение, и ты обязательно ответишь на свой вопрос -></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="border: 0px solid white!important;">
+                        <div class="slide_3 row">
+                            <div class="pic col-xm-6" style="padding-right: 20px!important">
+                                <img src="images/main-slide1.svg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-xm-6 my-auto">
+                                <p class="slide_text_1">
+                                    Пора задуматься
+                                </p>
+                                <p class="slide_text_2">
+                                    А надо ли тебе это всё?
+                                </p>
+                                <p class="w-75 slide_text_3">
+                                    <a href="#">Пройди наше обучение, и ты обязательно ответишь на свой вопрос -></a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 1 - конец -->
+
+        <!-- Блок 2-->
+
+        <div class="block2 text-center fullscreen-bg">
+            <div class="text" style="font-size: 48px; color: white ;font-weight: bold; padding-top: 5%">Наши сервисы
+            </div>
+            <hr class="bg-light" style="width:5%; opacity:0.5;">
+            <div class="text-center" style="font-size: 18; font-weight: 400; color: #7D7987; margin: 0% 25% ">Мы
+                предлагаем вам лучший выбор. Настройте его в соответствии с потребностями ваших желаний и убедитесь, что
+                вы проходите обучение у наших высококвалифицированных компаний.</div>
+            <div class="cards">
+                <div class="card_list row d-flex justify-content-center ">
+                    <a class="card_link text-dark" href="#">
+                        <div class="p-0 col-lg-4 mx-4 my-4 text-left " style="border: 1px solid white; background-color: white; border-radius: 10px; max-height: 354px;min-height: 354px; max-width: 320px">
+                            <div class="card_icon  mt-5 ml-4"><img src="images/main-search.svg" alt=""></div>
+                            <div class="card_caption mt-5 ml-4 " style="font-size: 23px; font-weight: 700">Поиск людей
+                            </div>
+                            <div class="card_text mt-3 ml-4 mr-3" style="font-size: 16px; font-weight: 400">Открой для
+                                себя новую ступень с 1 337 228 вакансиями от разных представителей</div>
+                        </div>
+                    </a>
+                    <a class="card_link text-dark" href="#">
+                        <div class="p-0 col-lg-4 mx-4 my-4 text-left " style="border: 1px solid white; background-color: white; border-radius: 10px; min-height: 354px; max-height: 354px; max-width: 320px">
+                            <div class="card_icon  mt-5 ml-4"><img src="images/main-education.svg" alt=""></div>
+                            <div class="card_caption mt-5 ml-4 " style="font-size: 23px; font-weight: 700">Обучение
+                            </div>
+                            <div class="card_text mb-3 mt-3 ml-4 mr-3" style="font-size: 16px; font-weight: 400">Вы
+                                сможете нанять самых лучших людей в любой сфере деятельности человека</div>
+                        </div>
+                    </a>
+                    <a class="card_link text-dark" href="#">
+                        <div class="p-0 col-lg-4 mx-4 my-4 text-left " style="border: 1px solid white; background-color: white; border-radius: 10px; min-height: 354px; max-height: 354px; max-width: 320px">
+                            <div class="card_icon  mt-5 ml-4"><img src="images/main-employment.svg" alt=""></div>
+                            <div class="card_caption mt-5 ml-4 " style="font-size: 23px; font-weight: 700">
+                                Трудоустройтво</div>
+                            <div class="card_text mb-3 mt-3 ml-4 mr-3" style="font-size: 16px; font-weight: 400">
+                                Продвижение по рейтингу в зависимости от ваших знаний, умений и навыков.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" row d-flex justify-content-center">
+                    <a class="card_link text-dark" href="#">
+                        <div class="p-0 col-lg-4 mx-4 my-4 text-left " style="border: 1px solid white; background-color: white; border-radius: 10px; min-height: 354px; max-height: 354px; max-width: 320px">
+                            <div class="card_icon  mt-5 ml-4"><img src="images/main-rating.svg" alt=""></div>
+                            <div class="card_caption mt-5 ml-4 " style="font-size: 23px; font-weight: 700">Рейтинг
+                                профилей</div>
+                            <div class="card_text mb-3 mt-3 ml-4 mr-3" style="font-size: 16px; font-weight: 400">Открой
+                                для себя новую ступень с 1 337 228 вакансиями от разных представителей</div>
+                        </div>
+                    </a>
+                    <a class="card_link text-dark" href="#">
+                        <div class="p-0 col-lg-4 mx-4 my-4 text-left " style="border: 1px solid white; background-color: white; border-radius: 10px; min-height: 354px; max-height: 354px; max-width: 320px">
+                            <div class="card_icon  mt-5 ml-4"><img src="images/main-hire.svg" alt=""></div>
+                            <div class="card_caption mt-5 ml-4 " style="font-size: 23px; font-weight: 700">Найм
+                                специалистов</div>
+                            <div class="card_text mb-3 mt-3 ml-4 mr-3" style="font-size: 16px; font-weight: 400">Открой
+                                для себя новую ступень с 1 337 228 вакансиями от разных представителей</div>
+                        </div>
+                    </a>
+                    <a class="card_link text-dark" href="#">
+                        <div class="p-0 col-lg-4 mx-4 my-4 text-left " style="border: 1px solid white; background-color: white; border-radius: 10px; min-height: 354px; max-height: 354px; max-width: 320px">
+                            <div class="card_icon  mt-5 ml-4"><img src="images/main-relevance.svg" alt=""></div>
+                            <div class="card_caption mt-5 ml-4 " style="font-size: 23px; font-weight: 700">Актуальность
+                            </div>
+                            <div class="card_text mb-3 mt-3 ml-4 mr-3" style="font-size: 16px; font-weight: 400">Открой
+                                для себя новую ступень с 1 337 228 вакансиями от разных представителей</div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="" style="padding: 5% 0 10% 0">
+                <input type="button" class="more_info px-5 py-2" value="Подробнее">
+            </div>
+        </div>
+        <!-- Блок 2 - конец -->
+
+        <!--Блок 3-->
+        <div class="row block3 ">
+            <!--/////////////////////////////////////////////////////-->
+            <div class="px-23 h-100 col-lg-6">
+                <div class="caption_block">
+                    <div class="text d-flex flex-column">
+                        <P style="font-size: 32px; font-weight:500; color: #007BFF; margin-bottom: -5px" class="">Если у
+                            вас возникли вопросы, то</P>
+                        <p style="font-size: 42px; color: #007BFF" class="font-weight-bold">Мы можем связаться с вами
+                        </p>
+                    </div>
+                    <div class="picture"><img src="images/main-communication.svg" alt="" class="w-100"></div>
+                </div>
+            </div>
+
+            <!--////////////////////////////////////////////////////-->
+            <div class="contacts col-lg-6">
+                <div class="contacts_block px-3 h-100 row">
+                    <div class="" style="font-size: 24px; color: #007BFF; font-weight: 500">Имя</div>
+                    <input type="text" placeholder="Alexande De Bruce" class="pl-2 col-12  mb-5" size="25" style="border: 0px solid black; border-bottom: 1px solid #007BFF; font-size: 18px;padding-bottom: 10px;">
+
+
+                    <div class="row d-flex col-12 " style="margin-bottom: 30%; margin-left: 0px !important;">
+
+                        <div class="pl-0 col-lg-5" style="margin-right: auto;">
+                            <div class="" style="font-size: 24px; font-weight: 500">Телефон</div>
+                            <input class="pl-2 w-100" type=" text" placeholder="Уже не Олег" size="25" style="border: 0px solid black; border-bottom: 1px solid black; margin: 10px 0px 10px 0px;font-size: 18px;padding-bottom: 10px;">
+                        </div>
+
+                        <div class="col-lg-5 w-100" style="padding: 0">
+                            <div class="" style="font-size: 24px; font-weight: 500">Почта</div>
+                            <input class="pl-2 w-100" type="text" placeholder="Бедный Олег" size="25" style="border: 0px solid black; border-bottom: 1px solid black; margin: 10px 0px 10px 0px;font-size: 18px;padding-bottom: 10px;">
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 row">
+                        <div class="d-flex col-lg-5 w-100 mr-auto">
+                            <input type="checkbox" id="scales" name="scales" checked class="">
+                            <label for="scales" style="font-size: 14px; font-weight: 500;" class="pl-2">Я согласен с
+                                условиями <br> обработки <a href="#" class="text-primary">персональных
+                                    данных</a></label>
+                        </div>
+                        <div class="p-0 mb-2 mb-md-0 col-lg-5">
+                            <input type="button" class="send px-5 py-2" value="Отправить" onclick="Send()">
+                        </div>
+                    </div>
+                    <!--//////////////////////////////////////////////////////////-->
+                </div>
+            </div>
+        </div>
+        <!--Конец 3 блока-->
+    </div>
+    <!--Конец основного контента-->
+
+     <!-- Подвал -->
+    <div class="footer">
+        <div class="pt-5">
+            <div class="info_link mx-auto row d-flex pt-5 container-fluid text-light justify-content-center" style="">
+                <div class="footer_info_column col-6 col-sm-2 col-lg-2  d-flex flex-column " style="">
+                    <span class="font-weight-bold h5 mb-3" style="min-width: 135px">О компании</span>
+                    <a class="mb-2 footer-h">Наши партнеры</a>
+                    <a class="mb-2 footer-h">Реквизиты</a>
+                    <a class="mb-2 footer-h">Услуги</a>
+                </div>
+                  <div class="footer_info_column col-6 col-sm-3 col-lg-3 d-flex flex-column " style="" style="">
+                    <span class="font-weight-bold h5 mb-3">Контактные данные</span>
+                    <a href="https://lazur.media" class="mb-2 footer-h">lazur.media</a>
+                    <a class="mb-2 footer-h">г. Тверь, ул. Гагарина, д. 1, офис 1 </a>
+                    <a class="mb-2 footer-h">+7 (905) 604-08-88</a>
+                </div>
+                <div class="footer_info_column col-6 col-sm-2 col-lg-2 d-flex flex-column " style="">
+                    <span class="font-weight-bold h5 mb-3">Помощь</span>
+                    <a class="mb-2 footer-h">Вход и регистрация</a>
+                    <a class="mb-2 footer-h">FAQ</a>
+                </div>
+            </div>
+            <div class=" d-flex flex-column mt-5">
+                <div class="d-flex justify-content-center">
+                    <a><img class="mx-4 footer-h" src="icons/footer-facebook.svg"/></a>
+                    <a><img class="mx-4 footer-h" src="icons/footer-instagram.svg" /></a>
+                    <a><img class="mx-4 footer-h" src="icons/footer-twitter.svg"/></a>
+                </div>
+
+                <div class="d-block text-light text-center mt-5 mb-4 pt-3 mx-5" style="border-top: 1px solid rgba(255, 255, 255, 0.1);">
+                    <span style="opacity: 0.6" class="mb-3">© Specialists Upper Volga, 2021</span> <br>
+                    <span class="text-center ml-1" style="opacity: 0.3; cursor: default">Все права
+                        защищены</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Подвал - конец -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>

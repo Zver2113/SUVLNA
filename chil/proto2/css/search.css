@@ -1,0 +1,61 @@
+.caption_text{
+    color: white; margin: 0
+}
+.forms{
+    margin-left: 15%;
+    margin-right: 2%;
+   
+}
+.forms1{
+    margin-left: 2%;
+ margin-right: 10%;
+    
+}
+.border_form{
+border-bottom:solid 1px;
+border-color: #ebebeb;
+}
+
+.itemEducation{
+    height: 84px;
+    border-radius: 5px;
+}
+
+.itemEducation:hover{
+    background-color: #ebebeb;
+}
+
+.search:after {
+     position: absolute;
+   }
+.search_inp{
+    position: relative;
+}
+
+.texts{
+ font-weight: 100
+}
+
+.platforms{
+padding-left: 100px;
+font-weight: 450;
+    font-size: 18px;
+}
+
+.price{
+    font-size: 14px;
+    color: rgba(0, 123, 255, 1);
+    text-decoration: underline;
+    text-decoration-color:  #ebebeb;
+}
+.price1{
+    font-size: 14px;
+    color:  #1F2229;
+    text-decoration: underline;
+    text-decoration-color:  #ebebeb;
+}
+
+.line{
+    text-decoration: underline;
+    text-decoration-color:  #ebebeb;
+}

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    font-family: "Montserrat" !important;
+    outline: none;
+}
+.btn,
+.btn:active,
+.btn:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border: none;
+}
+body {
+    overflow-x: hidden;
+    color: #2d2d2d
+}
+
+/* Шапка */
+
+.logo {
+    font-size: 11pt;
+}
+
+.header-hover {
+    width: 100px;
+}
+
+.header-hover:hover {
+    background-color: rgb(226, 228, 229);
+}
+
+.header-font {
+    font-size: 10pt;
+    font-weight: 350;
+}
+
+.header-blue,
+.header-blue:hover {
+    width: 100px;
+    color: rgba(0, 123, 255, 1);
+}
+
+/* Шапка - конец */
+
+/* Полоса прокрутки */
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #e6e6e6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(118, 118, 118);
+}
+
+/* Полоса прокрутки -конец */
+
+/* Подвал */
+
+.footer {
+    background-color: #2d2d2d;
+    color: white;
+    cursor: default;
+    font-size: 10pt;
+}
+
+.footer-h {
+    color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+}
+
+.footer-h:hover {
+    color: rgb(224, 223, 223);
+}
+
+.footer_info_column {
+    margin: 1% 6%;
+}
+
+.col-lg-2{
+    padding: 0;
+}
+.col-lg-3{
+    padding: 0;
+}
+
+/* Подвал - конец */
+
+/* Мобилки */
+
+@media screen and (min-width: 1px) {
+    .header-mob {
+        display: flex;
+/*        margin-left: 5%;*/
+    }
+
+    .header-font {
+        font-size: 13pt;
+    }
+
+    .header-hover {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header-mob {
+        display: block;
+    }
+
+    .header-font {
+        font-size: 10pt;
+    }
+
+    .header-hover {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .info_link {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .info_link {
+        width: 100% ;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .info_link {
+        width:100%;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .info_link {
+/*        width: 89%!important;*/
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .info_link {
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .info_link {
+/*        width: 60%;*/
+    }
+}
+.shadow{
+    box-shadow: 0px 2px 10px grey!important;
+}
+
+/* Мобилки - конец */

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="overflow-x-hidden">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/search_css.css">
+        <link rel="stylesheet" href="css/hf.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <title>Обучение</title>
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- Шапка -->
+        
+        
+    <nav class="shadow navbar navbar-expand-lg navbar-light bg-light w-100">
+        <div class="container-fluid">
+          <a href="index.html" class="btn mr-auto pl-0 ml-0 ml-md-3 ml-lg-4 ml-xl-5 d-flex mt-2">
+            <img src="icons/logo-black.svg" class="mb-2" />
+            <div class="w-100 mt-1 logo">
+              <span class="font-weight-bold mr-1">Specialists</span><br />
+              <span class="ml-2 font-weight-bold">Upper Volga</span>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 ml-auto">
+              <li class="nav-item">
+                <a href="index.html" class="btn my-2 pt-2 header-hover header-mob">
+                  <img src="icons/header-main.svg" class="header-icon text-right" />
+                  <span class="header-font ml-4 pl-1 ml-lg-0">Главная</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="app.html" class="btn my-2 pt-2 header-mob pt-2">
+                  <img src="icons/header-app.svg" class="header-icon" />
+                  <span class="header-font ml-4 ml-lg-0">Заявка</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="search.html" class="btn my-2 header-hover header-mob">
+                  <img src="icons/header-search.svg" class="header-icon" />
+                  <span class="header-font ml-4 ml-lg-0">Поиск</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="education.html" class="btn my-2 header-hover header-mob pt-2">
+                  <img src="icons/header-education.svg" class="header-icon mr-1" />
+                  <span class="header-font ml-2 ml-lg-0">Обучение</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 ml-auto mr-0 mr-lg-5">
+              <li class="nav-item mt-0 ml-auto mr-0">
+                <a href="registration.html" class="ml-auto mr-0" style="cursor: pointer; text-decoration: none;">
+                  <span class="font-weight-bold">Регистрация</span>
+                  <img src="icons/header-user.svg" class="ml-1" style="width: 40px;" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Шапка- конец -->
+
+        <!-- Шапка - конец -->
+        <div style="background-image: url(icons/header.svg); height: 100%; background-size: cover " class="w-100">
+            <h1 class="text-center pt-5 caption_text" style="">Найди лучшее предложение</h1>
+            <h1 class="text-center caption_text" style="color: white">на нашем рынке</h1>
+            <p class="text-center texts" style="color: white; margin: 0; font-size: 16px">Открой для себя новую ступень в карьере с <b style="font-weight: 500">1 337 228</b></p>
+            <p class="text-center texts" style="color: white; margin: 0; font-size: 16px">вакансиями на работу. Либо же сам найми самых опытных</p>
+            <p class="text-center texts mb-0" style="color: white; padding-bottom: 30px;font-size: 16px">специалистов.</p>
+
+        </div>
+
+        <!-- Формы -->
+
+        <div class="row">
+
+
+            <!--Форма-фильра-->
+            <div class="col-lg-2 forms mt-md-4 mb-4 border round shadow bg-white ">
+                <p style="margin-top: 5%; font-size: 18px; font-weight: 700">Фильтры</p>
+                <div class="form-check" style="margin-bottom: 3%">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" placeholder="Дополнительная информация">
+                    <label class="form-check-label texts" for="flexRadioDefault1" style="font-size: 16px">
+                        Список вакансий
+                    </label>
+                </div>
+                <div class="form-check " style="margin-bottom: 5%">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label texts" for="flexRadioDefault2" style="font-size: 16px">
+                        Поиск персонала
+                    </label>
+                </div>
+
+                <p style="font-size: 18px; font-weight: 700">Регион</p>
+                <div class="input-group input-group-sm mb-3 round">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Локация...">
+                </div>
+
+                <p style="font-size: 18px; font-weight: 700">Направление</p>
+                <div class="input-group mb-3 border round">
+                    <button class="btn btn-outline-secondary dropdown-toggle  w-100 " type="button" data-bs-toggle="dropdown" aria-expanded="inputGroup-sizing-sm">Все направления</button>
+                    <ul class="dropdown-menu" id="categories">
+                        <li v-for="(category, index) in categories" :class="{ 'list-group-itemActive': selCategoryItem == index, 'list-group-item': selCategoryItem != index }" @click="selCategory(index)">{{ category.title }}</li>
+                    </ul>
+                </div>
+                <p style="font-size: 18px; font-weight: 700">Компетенции</p>
+                <div class="input-group mb-3 border round">
+                    <button class="btn btn-outline-secondary dropdown-toggle  w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">Все компетенции </button>
+                    <ul class="dropdown-menu" id="competencies">
+                        <li v-for="(competency, index) in competencies" :class="{ 'list-group-itemActive': selCompetencyItem == index, 'list-group-item': selCompetencyItem != index }" @click="selCompetency(index), renameSpecialist(index)">{{ competency.title }}</li>
+                    </ul>
+                </div>
+                <p style="font-size: 18px; font-weight: 700">Навыки</p>
+                <div class="input-group mb-3 border round ">
+                    <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">Все навыки</button>
+                    <ul class="dropdown-menu" id="skills">
+                        <li v-for="(skill, index) in skills" :class="{ 'list-group-itemActive': specialists[selectSpecialist].selectSkills.includes(skill.title), 'list-group-item': !specialists[selectSpecialist].selectSkills.includes(skill.title) }" @click="selSkill(index)"> {{ skill.title }} </li>
+                    </ul>
+                </div>
+                <div class="form-check mb-2 form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label texts" for="flexSwitchCheckChecked" style="font-size: 16px">Только удалённо</label>
+                </div>
+            </div>
+            <!--Форма-фильра-конец-->
+            <!--Форма-выбора-->
+                <!--
+        <div class="row border_form">
+        <span class="ml-3 d-flex"><img src="icons/search_forms.svg" class="rounded float-start search mb-2" alt="">
+            <div class="input-group mb-2 d-flex align-items-center" >
+              <input type="text" size=300px style="border: 0px;" class="fm mt-1" aria-label="Text input with dropdown button" size="65%" placeholder="Поиск...">
+              <div class="sort sortirovka">
+              <span class="mt-2 sortirovka" style="font-size: 16px; font-weight: 300">Сортировка:</span>
+               
+              <button class="btn btn-outline-secondary dropdown-toggle sortirovka" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 16px">По Убыванию</button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="http://127.0.0.1:59063/index.html">От А до Я</a></li>
+                <li><a class="dropdown-item" href="http://127.0.0.1:59063/index.html">От Я до А</a></li>
+                <li><a class="dropdown-item" href="http://127.0.0.1:59063/index.html">По Возрастанию</a></li>
+                <li><a class="dropdown-item" href="http://127.0.0.1:59063/index.html">По Убыванию</a></li>
+                <li><a class="dropdown-item" href="http://127.0.0.1:59063/index.html">По Давности: Старые</a></li>
+                <li><a class="dropdown-item" href="http://127.0.0.1:59063/index.html">По Давности: Новые</a></li>
+                  </ul>
+                </div>
+            </div>
+            </span>
+        </div>
+-->
+            <div class="col-lg-6 forms1 mt-md-4 border round shadow bg-white" style="margin-bottom: 4%">
+                <div class="row border-bottom pt" style="max-height: 51px;">
+                    <span class="ml-3 mr-2 py-2" style="margin: 0;top: 50%;left: 50%;"><img src="icons/search_forms.svg" class="w-100 h-100 img-fluid" alt="">
+                    </span>
+                    <div class="p-0 col-7 input-group" style="align-items: center"> 
+                    <input type="text" size="" style="height: 90%!important; height: 40px;border: 0px; border-bottom: 0px solid;height: 96%;" class=" w-100 p-0" aria-label="Text input with dropdown button" size="" placeholder="Поиск...">
+                    </div>
+                       
+                       <div class="pt-2 p-0 w-100 col-4">
+                       
+                       <div class="mt text-right" style="font-size: 14px; font-weight: 400">Сортировка:
+                            <button class="p-0 btn btn-outline-secondary dropdown-toggle sortirovka" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 14px; font-weight: 500">По Убыванию</button>
+                        
+                        
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href=" # ">От А до Я</a></li>
+                            <li><a class="dropdown-item" href=" # ">От Я до А</a></li>
+                            <li><a class="dropdown-item" href=" # ">По Возрастанию</a></li>
+                            <li><a class="dropdown-item" href=" # ">По Убыванию</a></li>
+                            <li><a class="dropdown-item" href=" # ">По Давности: Старые</a></li>
+                            <li><a class="dropdown-item" href=" # ">По Давности: Новые</a></li>
+                        </ul>
+                           </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--Форма-выбора-конец-->
+
+        </div>
+        <!--  Формы - конец -->
+
+        <!-- Отправочная кнопка -->
+
+
+
+        <!-- Отправочная кнопка - конец -->
+
+        <!-- Подвал -->
+        
+          <div class="footer">
+        <div class="pt-5">
+            <div class="info_link mx-auto w-50 row d-flex pt-5 container-fluid text-light justify-content-center">
+                <div class="w-100 footer_info_column col-12 col-lg-2  d-flex flex-column">
+                    <span class="font-weight-bold h5 mb-3" style="min-width: 135px">О компании</span>
+                    <a class="mb-2 footer-h">Наши партнеры</a>
+                    <a class="mb-2 footer-h">Реквизиты</a>
+                    <a class="mb-2 footer-h">Услуги</a>
+                </div>
+                <div class="w-100 footer_info_column col-12 col-lg-3 d-flex flex-column">
+                    <span class="font-weight-bold h5 mb-3">Контактные данные</span>
+                    <a href="https://lazur.media" class="mb-2 footer-h">lazur.media</a>
+                    <a class="mb-2 footer-h">г. Тверь, ул. Гагарина, д. 1, офис 1 </a>
+                    <a class="mb-2 footer-h">+7 (905) 604-08-88</a>
+                </div>
+                <div class="w-100 footer_info_column col-12 col-lg-2 d-flex flex-column">
+                    <span class="font-weight-bold h5 mb-3">Помощь</span>
+                    <a class="mb-2 footer-h">Вход и регистрация</a>
+                    <a class="mb-2 footer-h">FAQ</a>
+                </div>
+            </div>
+            <div class=" d-flex flex-column mt-5">
+                <div class="d-flex justify-content-center">
+                    <a><img class="mx-4 footer-h" src="icons/footer-facebook.svg" /></a>
+                    <a><img class="mx-4 footer-h" src="icons/footer-instagram.svg" /></a>
+                    <a><img class="mx-4 footer-h" src="icons/footer-twitter.svg" /></a>
+                </div>
+
+                <div class="d-block text-light text-center mt-5 mb-4 pt-3 mx-5"
+                    style="border-top: 1px solid rgba(255, 255, 255, 0.1);">
+                    <span style="opacity: 0.6" class="mb-3">© Specialists Upper Volga, 2021</span> <br>
+                    <span class="text-center ml-1" style="opacity: 0.3; cursor: default">Все права
+                        защищены</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Подвал - конец -->
+
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/search_js.js" charset="utf-8"></script></html>
