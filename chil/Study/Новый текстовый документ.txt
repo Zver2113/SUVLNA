@@ -1,0 +1,17 @@
+ <div style="width: 65%" class="col-12 col-lg-7 col-xl-7 col-md-7 mt-md-0 mt-sm-2 mt-2 mt-lg-0">
+                    <div class="d-flex flex-wrap mt-1 ml-2 ml-md-0 mr-1 mr-sm-0" id="selects">
+                      <span class="box p-1 pl-2 mr-3 mb-1" v-for="(skill, indexSkill) in specialist.selectSkills">
+                        {{ skill }}
+                        <span class="ml-2 mb-1 mr-1 badge badge-pill badg pb-1" id="closed"
+                          @click="deleteSkill(indexSpecialist, indexSkill)">✕</span>
+                      </span>
+                    </div>
+                  </div>
+
+
+ <div class="row">
+                <div>
+                  <button class="specAdd mt-3 mb-4 ml-4 ml-md-3 ml-lg-3" @click="addPerson()"><img src="icons/app-add.svg" alt=""><span
+                      class="ml-2">Добавить</span></button>
+                </div>
+              </div>
